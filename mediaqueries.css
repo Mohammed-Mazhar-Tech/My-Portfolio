@@ -1,0 +1,107 @@
+/* ==============================================================
+   MEDIA QUERIES FOR RESPONSIVE DESIGN
+============================================================== */
+
+@media screen and (max-width: 1024px) {
+  .hero-title {
+    font-size: 3.5rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  /* Navigation swap to Hamburger */
+  #desktop-nav {
+    display: none;
+  }
+
+  #hamburger-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+  }
+
+  /* Typography Adjustments */
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  /* Grid Stack Adjustments */
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .work-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline {
+    padding-left: 1rem;
+  }
+
+  .timeline::before {
+    left: 0.5rem;
+  }
+
+  .timeline-item::before {
+    left: -0.5rem;
+    width: 0.5rem;
+  }
+
+  .timeline-item::after {
+    left: -1rem;
+  }
+
+  .container {
+    padding: 6rem 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-title {
+    font-size: 2.25rem;
+  }
+
+  .btn-group {
+    flex-direction: column;
+    padding: 0 2rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline::before {
+    left: 0.2rem;
+  }
+
+  .timeline-item::before {
+    left: -0.2rem;
+    width: 0.2rem;
+  }
+
+  .timeline-item::after {
+    left: -0.65rem;
+  }
+}

@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohammed Mazhar | Cybersecurity & AI </title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+
+  <!-- Premium Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Typed.js -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <!-- Three.js for Premium 3D Abstract Background -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+</head>
+
+<body>
+  <!-- Ambient Gradient Background -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+
+  <!-- 3D Canvas -->
+  <div id="canvas-container"
+    style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -1; pointer-events: none; opacity: 0.6;">
+  </div>
+
+  <!-- Sleek Navigation -->
+  <nav id="desktop-nav" class="glass-nav">
+    <div class="logo">Mohammed<span class="gradient-text">Mazhar</span></div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <nav id="hamburger-nav" class="glass-nav">
+    <div class="logo">Mazhar<span class="gradient-text">.</span></div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Work</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section id="home" class="hero-section">
+  <div class="hero-container">
+
+    <!-- LEFT -->
+    <div class="hero-text">
+
+      <h1 class="hero-title fade-in-up delay-2">
+        Security Intelligent Systems with <br>
+        <span class="gradient-text">Cybersecurity & AI</span>
+      </h1>
+
+      <p class="hero-subtitle fade-in-up delay-3">
+        Cybersecurity Engineer specializing in LLM Security, Prompt Injection Defense, and Network Monitoring.
+        Currently focused on <br> 
+        <span class="typed-text gradient-text"></span>
+      </p>
+
+      <div class="btn-group fade-in-up delay-4">
+        <button class="btn btn-primary"
+          onclick="window.open('assets/Mohammed_Mazhar_Cybersecurity_Resume.pdf')">
+          Download Resume
+        </button>
+
+        <button class="btn btn-outline" onclick="location.href='#projects'">
+          Explore Work
+        </button>
+      </div>
+
+    </div>
+
+    <!-- RIGHT -->
+    <div class="hero-profile">
+      <img src="assets/profile.jpg" alt="Mohammed Mazhar">
+    </div>
+
+  </div>
+</section>
+        <div class="social-icons fade-in-up delay-5">
+          <a href="https://github.com/Mohammed-Mazhar-Tech" target="_blank" class="social-btn" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+              </path>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/mohammed-mazhar-792838351/" target="_blank" class="social-btn"
+            aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+          <a href="mailto:mohammedmazhar240@gmail.com" class="social-btn" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="container">
+      <div class="section-title-wrap">
+        <h2 class="section-title">About Me</h2>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="glass-card p-4">
+          <p class="text-large text-gradient-light mb-2">
+            Securing modern AI systems and digital infrastructure.
+          </p>
+
+          <p class="text-muted mb-2">
+            Cybersecurity undergraduate specializing in LLM security, prompt injection defense, and network monitoring.
+          </p>
+
+          <p class="text-muted mb-2">
+            Built real-world systems including a LAN monitoring solution at HAL and an ML-based LLM defense platform to detect adversarial attacks.
+          </p>
+
+          <p class="text-muted">
+            Passionate about protecting intelligent systems using machine learning, risk scoring, and secure system design.
+          </p>
+        </div>
+
+        <div class="stats-grid">
+          <div class="glass-card stat-card">
+            <h3 class="stat-number gradient-text">LLM+</h3>
+            <p class="stat-desc">Security Focus</p>
+          </div>
+          <div class="glass-card stat-card">
+            <h3 class="stat-number gradient-text">HAL</h3>
+            <p class="stat-desc">Industrial Validations</p>
+          </div>
+          <div class="glass-card stat-card">
+            <h3 class="stat-number gradient-text">ML</h3>
+            <p class="stat-desc">Threat Detection</p>
+          </div>
+          <div class="glass-card stat-card">
+            <h3 class="stat-number gradient-text">8.0+</h3>
+            <p class="stat-desc">CGPA </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience" class="container">
+      <div class="section-title-wrap">
+        <h2 class="section-title">Experience</h2>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="timeline">
+        
+
+        <!-- Experience 1 -->
+        <div class="timeline-item glass-card p-4">
+          <div class="timeline-header flex-between mb-1">
+            <h3 class="timeline-title">Project Intern</h3>
+            <span class="timeline-date">May 2025 – Jul 2025</span>
+          </div>
+          <h4 class="timeline-company gradient-text mb-2">Hindustan Aeronautics Limited (HAL)</h4>
+          <ul class="styled-list text-muted">
+            <li>Developed and deployed an automated LAN monitoring system to secure network integrity during off-hours.
+            </li>
+            <li>Engineered a C# (.NET) application leveraging PowerShell to scan for active IP/MAC addresses and
+              unauthorized shared folders.</li>
+            <li>Designed a secure logging pipeline to an Oracle database for real-time analysis.</li>
+            <li>Provided real-time security insights through a custom web dashboard, which was successfully adopted and
+              validated in a live lab environment.</li>
+          </ul>
+        </div>
+
+        <!-- Experience 2 -->
+        <div class="timeline-item glass-card p-4">
+          <div class="timeline-header flex-between mb-1">
+            <h3 class="timeline-title">Intern</h3>
+            <span class="timeline-date">May 2024 – Jul 2024</span>
+          </div>
+          <h4 class="timeline-company gradient-text mb-2">Indian Institute of Technology, Guwahati</h4>
+          <ul class="styled-list text-muted">
+            <li>Conducted research on sentiment analysis of social media data using advanced NLP techniques.</li>
+            <li>Performed data preprocessing including tokenization, normalization, and feature extraction to handle noisy textual data.
+            </li>
+            <li>Designed and trained a Support Vector Machine (SVM) model for sentiment classification, achieving an F1-score of 0.94.</li>
+            <li>Improved model performance through feature engineering and hyperparameter tuning, enhancing classification accuracy and robustness.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+        <!-- SKILLS OVERVIEW -->
+    <section id="skills" class="container">
+      <div class="section-title-wrap">
+        <h2 class="section-title">Technical Expertise</h2>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="skills-grid">
+
+        <!-- Cybersecurity -->
+        <div class="glass-card p-4">
+          <h3 class="mb-2 gradient-text">Cybersecurity</h3>
+          <div class="badge-container left-align">
+            <span class="skill-badge">Network Monitoring</span>
+            <span class="skill-badge">Prompt Injection Defense</span>
+            <span class="skill-badge">Authentication Security</span>
+            <span class="skill-badge">LLM Security</span>
+            <span class="skill-badge">Risk Scoring</span>
+            <span class="skill-badge">Adversarial ML</span>
+          </div>
+        </div>
+
+        <!-- Security Tools -->
+        <div class="glass-card p-4">
+          <h3 class="mb-2 gradient-text">Security Tools</h3>
+          <div class="badge-container left-align">
+            <span class="skill-badge">Kali Linux</span>
+            <span class="skill-badge">Wireshark</span>
+            <span class="skill-badge">Nmap</span>
+            <span class="skill-badge">Packet Analysis</span>
+            <span class="skill-badge">IP Scanning</span>
+          </div>
+        </div>
+
+        <!-- Programming -->
+        <div class="glass-card p-4">
+          <h3 class="mb-2 gradient-text">Programming</h3>
+          <div class="badge-container left-align">
+            <span class="skill-badge">Python</span>
+            <span class="skill-badge">C</span>
+            <span class="skill-badge">Java</span>
+            <span class="skill-badge">C#</span>
+            <span class="skill-badge">HTML</span>
+            <span class="skill-badge">CSS</span>
+            <span class="skill-badge">JavaScript</span>
+          </div>
+        </div>
+
+        <!-- ML & NLP -->
+        <div class="glass-card p-4">
+          <h3 class="mb-2 gradient-text">Machine Learning & NLP</h3>
+          <div class="badge-container left-align">
+            <span class="skill-badge">Scikit-learn</span>
+            <span class="skill-badge">NLP</span>
+            <span class="skill-badge">SVM</span>
+            <span class="skill-badge">Sentiment Analysis</span>
+            <span class="skill-badge">Feature Engineering</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="container">
+          <div class="section-title-wrap">
+            <h2 class="section-title">Selected Works</h2>
+            <div class="title-line"></div>
+          </div>
+
+          <div class="work-grid">
+
+      <!-- Project 1 -->
+      <div class="work-card glass-card">
+        <div class="work-content p-4">
+          <div class="work-meta mb-1">
+            <span class="status-pill active">MAJOR PROJECT</span>
+            <span class="work-type">LLM Security</span>
+          </div>
+          <h3 class="work-title mb-1">LLM Attack Detection & Prompt Injection Defense Platform</h3>
+          <p class="work-desc text-muted mb-2">
+            Developed a machine learning-based security platform to detect prompt injection and jailbreak attacks targeting Large Language Models.
+            Implemented risk scoring and filtering to classify prompts as safe or malicious before execution.
+          </p>
+          <div class="tech-stack mb-3">
+            <span>Python</span>
+            <span>Machine Learning</span>
+            <span>NLP</span>
+            <span>Flask</span>
+            <span>Cybersecurity</span>
+          </div>
+          <div class="work-links">
+            <a href="soon.html" class="link-btn">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="work-card glass-card">
+        <div class="work-content p-4">
+          <div class="work-meta mb-1">
+            <span class="status-pill active">PROJECT</span>
+            <span class="work-type">Security + ML</span>
+          </div>
+          <h3 class="work-title mb-1">PasswordTensor – Password Strength Analyzer</h3>
+          <p class="work-desc text-muted mb-2">
+            Built a password strength evaluation system using machine learning techniques.
+            Extracted features like entropy, length, and patterns to prevent brute-force and dictionary attacks.
+          </p>
+          <div class="tech-stack mb-3">
+            <span>Python</span>
+            <span>Machine Learning</span>
+            <span>Security</span>
+          </div>
+          <div class="work-links">
+            <a href="soon.html" class="link-btn">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="work-card glass-card">
+        <div class="work-content p-4">
+          <div class="work-meta mb-1">
+            <span class="status-pill active">INTERNSHIP PROJECT</span>
+            <span class="work-type">Network Security</span>
+          </div>
+          <h3 class="work-title mb-1">LAN Monitoring System (HAL)</h3>
+          <p class="work-desc text-muted mb-2">
+            Developed a LAN monitoring system using ICMP and ARP-based scanning to identify active devices.
+            Improved network visibility and security for enterprise infrastructure.
+          </p>
+          <div class="tech-stack mb-3">
+            <span>C#</span>
+            <span>.NET</span>
+            <span>Network Security</span>
+            <span>IP Scanning</span>
+          </div>
+          <div class="work-links">
+            <a href="soon.html" class="link-btn">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="work-card glass-card">
+        <div class="work-content p-4">
+          <div class="work-meta mb-1">
+            <span class="status-pill active">RESEARCH</span>
+            <span class="work-type">Machine Learning</span>
+          </div>
+          <h3 class="work-title mb-1">Sentiment Analysis on Social Media</h3>
+          <p class="work-desc text-muted mb-2">
+            Built a sentiment analysis model using NLP and SVM classifier.
+            Achieved high accuracy through preprocessing and feature engineering techniques.
+          </p>
+          <div class="tech-stack mb-3">
+            <span>Python</span>
+            <span>NLP</span>
+            <span>SVM</span>
+          </div>
+          <div class="work-links">
+            <a href="soon.html" class="link-btn">View Details</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+        <!-- CONTACT SECTION -->
+    <section id="contact" class="container" style="margin-bottom: 5rem;">
+      <div class="contact-card glass-card p-4 text-center">
+        
+        <h2 class="section-title mb-1" style="margin-bottom: 0.5rem;">
+          Let’s Secure the Future 🔐
+        </h2>
+
+        <p class="text-muted mb-4 max-w-2xl mx-auto">
+          I'm actively seeking opportunities in cybersecurity, focusing on LLM security, network monitoring, 
+          and machine learning-based threat detection. Feel free to reach out for collaboration or opportunities.
+        </p>
+
+        <a href="mailto:mohammedmazhar240@gmail.com" class="btn btn-primary"
+          style="display: inline-flex; align-items: center; gap: 0.5rem; border-radius: 999px;">
+          
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+
+          Say Hello
+        </a>
+
+      </div>
+    </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container flex-between align-center">
+        
+        <div class="footer-logo logo">
+          Mazhar<span class="gradient-text">.</span>
+        </div>
+
+        <p class="text-muted text-small">
+          © 2026 Mohammed Mazhar | Cybersecurity Portfolio
+        </p>
+
+      </div>
+    </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
