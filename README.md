@@ -1,11 +1,11 @@
 # Mohammed Mazhar | Cybersecurity Portfolio 🔐
 
 <div align="center">
-  <img src="https://img.shields.io/badge/Status-Live-success?style=for-the-badge" alt="Status" />
-  <a href="[https://github.com/Mohammed-Mazhar-Tech/Mohammed-Mazhar-Tech.github.io/](https://mohammed-mazhar-tech.github.io/My-Portfolio/)">
-    <img src="https://img.shields.io/badge/View_Live_Preview-06b6d4?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Preview" />
+  <a href="https://mohammed-mazhar-tech.github.io/My-Portfolio/" target="_blank">
+    <img src="https://img.shields.io/badge/🚀_View_Live_Portfolio-06b6d4?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Portfolio"/>
   </a>
 </div>
+
 
 <br />
 
